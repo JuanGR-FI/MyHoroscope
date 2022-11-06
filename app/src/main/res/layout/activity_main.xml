@@ -7,6 +7,45 @@
     android:background="@drawable/backgroundspace"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="369dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="369dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="369dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -22,14 +61,17 @@
         app:layout_constraintVertical_bias="0.050000012" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:ems="10"
+        android:gravity="center_horizontal"
         android:hint="Nombre"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:textColorHint="#006064"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,42 +80,54 @@
         app:layout_constraintVertical_bias="0.19999999" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/etNumCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:ems="10"
+        android:gravity="center_horizontal"
         android:hint="Núm. cuenta"
         android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40" />
+        app:layout_constraintVertical_bias="0.535" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/etCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:ems="10"
+        android:gravity="center_horizontal"
         android:hint="Correo electrónico"
         android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="click"
         android:text="Ingresar"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.865" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

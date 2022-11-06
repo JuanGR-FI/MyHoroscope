@@ -190,7 +190,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Tauro" />
+        app:srcCompat="@drawable/tauro" />
 
     <ImageView
         android:id="@+id/ivGeminis"
@@ -216,7 +216,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Cancer" />
+        app:srcCompat="@drawable/cancer" />
 
     <ImageView
         android:id="@+id/ivLeo"
@@ -229,7 +229,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Leo" />
+        app:srcCompat="@drawable/leo" />
 
     <ImageView
         android:id="@+id/ivVirgo"
@@ -255,7 +255,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Libra" />
+        app:srcCompat="@drawable/libra" />
 
     <ImageView
         android:id="@+id/ivEscorpio"
@@ -268,7 +268,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Escorpio" />
+        app:srcCompat="@drawable/escorpio" />
 
     <ImageView
         android:id="@+id/ivSagitario"
@@ -294,7 +294,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Capricornio" />
+        app:srcCompat="@drawable/capricornio" />
 
     <ImageView
         android:id="@+id/ivAcuario"
@@ -320,7 +320,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Piscis" />
+        app:srcCompat="@drawable/piscis" />
 
     <ImageView
         android:id="@+id/ivRata"
@@ -346,7 +346,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Buey" />
+        app:srcCompat="@drawable/buey" />
 
     <ImageView
         android:id="@+id/ivCaballo"
@@ -359,7 +359,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Caballo" />
+        app:srcCompat="@drawable/caballo" />
 
     <ImageView
         android:id="@+id/ivCabra"
@@ -372,7 +372,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Cabra" />
+        app:srcCompat="@drawable/cabra" />
 
     <ImageView
         android:id="@+id/ivCerdo"
@@ -385,7 +385,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Cerdo" />
+        app:srcCompat="@drawable/cerdo" />
 
     <ImageView
         android:id="@+id/ivConejo"
@@ -398,7 +398,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Conejo" />
+        app:srcCompat="@drawable/conejo" />
 
     <ImageView
         android:id="@+id/ivDragon"
@@ -411,7 +411,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Dragon" />
+        app:srcCompat="@drawable/dragon" />
 
     <ImageView
         android:id="@+id/ivGallo"
@@ -424,7 +424,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Gallo" />
+        app:srcCompat="@drawable/gallo" />
 
     <ImageView
         android:id="@+id/ivMono"
@@ -437,7 +437,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Mono" />
+        app:srcCompat="@drawable/mono" />
 
     <ImageView
         android:id="@+id/ivPerro"
@@ -450,7 +450,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Perro" />
+        app:srcCompat="@drawable/perro" />
 
     <ImageView
         android:id="@+id/ivSerpiente"
@@ -463,7 +463,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Serpiente" />
+        app:srcCompat="@drawable/serpiente" />
 
     <ImageView
         android:id="@+id/ivTigre"
@@ -476,6 +476,6 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/Tigre" />
+        app:srcCompat="@drawable/tigre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
