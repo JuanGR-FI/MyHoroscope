@@ -190,25 +190,143 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/tauro" />
+        app:srcCompat="@drawable/Tauro" />
 
     <ImageView
         android:id="@+id/ivGeminis"
         android:layout_width="129dp"
         android:layout_height="107dp"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.452"
-        app:srcCompat="@drawable/tauro" />
+        app:srcCompat="@drawable/geminis" />
+
+    <ImageView
+        android:id="@+id/ivCancer"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Cancer" />
+
+    <ImageView
+        android:id="@+id/ivLeo"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Leo" />
+
+    <ImageView
+        android:id="@+id/ivVirgo"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/virgo" />
+
+    <ImageView
+        android:id="@+id/ivLibra"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Libra" />
+
+    <ImageView
+        android:id="@+id/ivEscorpio"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Escorpio" />
+
+    <ImageView
+        android:id="@+id/ivSagitario"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/sagitario" />
+
+    <ImageView
+        android:id="@+id/ivCapricornio"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Capricornio" />
+
+    <ImageView
+        android:id="@+id/ivAcuario"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/acuario" />
+
+    <ImageView
+        android:id="@+id/ivPiscis"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Piscis" />
 
     <ImageView
         android:id="@+id/ivRata"
         android:layout_width="129dp"
         android:layout_height="107dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.483"
@@ -216,5 +334,148 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.452"
         app:srcCompat="@drawable/rata" />
+
+    <ImageView
+        android:id="@+id/ivBuey"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Buey" />
+
+    <ImageView
+        android:id="@+id/ivCaballo"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Caballo" />
+
+    <ImageView
+        android:id="@+id/ivCabra"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Cabra" />
+
+    <ImageView
+        android:id="@+id/ivCerdo"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Cerdo" />
+
+    <ImageView
+        android:id="@+id/ivConejo"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Conejo" />
+
+    <ImageView
+        android:id="@+id/ivDragon"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Dragon" />
+
+    <ImageView
+        android:id="@+id/ivGallo"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Gallo" />
+
+    <ImageView
+        android:id="@+id/ivMono"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Mono" />
+
+    <ImageView
+        android:id="@+id/ivPerro"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Perro" />
+
+    <ImageView
+        android:id="@+id/ivSerpiente"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Serpiente" />
+
+    <ImageView
+        android:id="@+id/ivTigre"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/Tigre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
