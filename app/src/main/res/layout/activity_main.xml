@@ -21,16 +21,29 @@
         app:srcCompat="@android:drawable/screen_background_dark_transparent" />
 
     <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="369dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+    <ImageView
         android:id="@+id/imageView6"
         android:layout_width="369dp"
         android:layout_height="100dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543"
+        app:layout_constraintVertical_bias="0.546"
         app:srcCompat="@android:drawable/screen_background_dark_transparent" />
 
     <ImageView
@@ -40,10 +53,9 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717"
+        app:layout_constraintVertical_bias="0.716"
         app:srcCompat="@android:drawable/screen_background_dark_transparent" />
 
     <TextView
@@ -78,6 +90,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/etDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Fecha"
+        android:clickable="false"
+        android:focusable="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364" />
 
     <EditText
         android:id="@+id/etNumCuenta"
