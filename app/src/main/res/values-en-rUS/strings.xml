@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="numcuentahint">Student ID</string>
+    <string name="correohint">E-mail</string>
+    <string name="fechahint">Date of Birth</string>
+    <string name="nombrehint">Name</string>
+    <string name="btnIngresar">Enter</string>
+    <string name="version">Version 1.0</string>
+</resources>
