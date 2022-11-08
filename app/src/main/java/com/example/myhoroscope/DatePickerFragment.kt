@@ -23,6 +23,7 @@ class DatePickerFragment(val listener: (day: Int, month: Int, year: Int) -> Unit
         val year = c.get(Calendar.YEAR)
 
         val picker = DatePickerDialog(activity as Context,this, year, month, day)
+
         return picker
     }
 }
