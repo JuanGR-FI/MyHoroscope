@@ -6,4 +6,6 @@
     <string name="nombrehint">Name</string>
     <string name="btnIngresar">Enter</string>
     <string name="version">Version 1.0</string>
+    <string name="tusresultados">Your results</string>
+    <string name="chino">Chinese</string>
 </resources>

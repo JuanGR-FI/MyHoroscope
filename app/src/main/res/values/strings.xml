@@ -6,4 +6,7 @@
     <string name="nombrehint">Nombre</string>
     <string name="btnIngresar">Ingresar</string>
     <string name="version">Versión 1.0</string>
+    <string name="tusresultados">Tus resultados</string>
+    <string name="zodiacal" translatable="false">Zodiacal</string>
+    <string name="chino">Chino</string>
 </resources>
