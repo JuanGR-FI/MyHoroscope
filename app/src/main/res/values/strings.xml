@@ -9,4 +9,9 @@
     <string name="tusresultados">Tus resultados</string>
     <string name="zodiacal" translatable="false">Zodiacal</string>
     <string name="chino">Chino</string>
+    <string name="numCuenta">Núm. cuenta:</string>
+    <string name="correo">Correo:</string>
+    <string name="fecha">Fecha de Nac:</string>
+    <string name="regresar" >Regresar</string>
+    <string name="edad">Edad:</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.myhoroscope
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,6 +9,8 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import com.example.myhoroscope.databinding.ActivityMain2Binding
 import com.example.myhoroscope.model.Usuario
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity2 : AppCompatActivity() {
     private val fechasRata = listOf(1936, 1948, 1960, 1972, 1984, 1996, 2008)
@@ -35,10 +38,79 @@ class MainActivity2 : AppCompatActivity() {
 
         binding.tvNombre.text = user?.nombre
 
+        val zodiacal = calculaZodiacal(user?.dia,user?.mes)
         val chino = calculaChino(user?.anio)
 
         entregaResultados(user,chino)
 
+    }
+
+    fun calculaEdad(fecha: String): Long{
+        var fechaNac = SimpleDateFormat("dd/MM/yyyy").parse(fecha)
+        var fechaActual = Date(System.currentTimeMillis())
+        var diferenciaFechas = fechaActual.time - fechaNac.time
+        var segundos = diferenciaFechas/1000
+        var minutos = segundos/60
+        var horas = minutos/60
+        var dias = horas/24
+        var anios = dias/365
+        return anios
+    }
+    
+    fun calculaZodiacal(dia: Int?, mes: Int?): Int{
+        if(dia != null){
+            when(mes){
+                1 -> {
+                    return if(dia <=19) 1 else 2 //Capricornio o Acuario
+                }
+
+                2 -> {
+                    return if(dia <=18) 2 else 3 //Acuario o Piscis
+                }
+
+                3 -> {
+                    return if(dia <=20) 3 else 4 //Piscis o Aries
+                }
+
+                4 -> {
+                    return if(dia <=19) 4 else 5 //Aries o Tauro
+                }
+
+                5 -> {
+                    return if(dia <=21) 5 else 6 //Tauro o Geminis
+                }
+
+                6 -> {
+                    return if(dia <=20) 6 else 7 //Geminis o Cancer
+                }
+
+                7 -> {
+                    return if(dia <=22) 7 else 8 //Cancer o Leo
+                }
+
+                8 -> {
+                    return if(dia <=22) 8 else 9 //Leo o Virgo
+                }
+
+                9 -> {
+                    return if(dia <=22) 9 else 10 //Virgo o Libra
+                }
+
+                10 -> {
+                    return if(dia <=22) 10 else 11 //Libra o Escorpio
+                }
+
+                11 -> {
+                    return if(dia <=21) 11 else 12 //Escorpio o Sagitario
+                }
+
+                12 -> {
+                    return if(dia <=21) 12 else 1 //Sagitario o Capricornio
+                }
+            }
+
+        }
+        return -1
     }
 
     fun calculaChino(year: Int?): Int{
@@ -87,8 +159,17 @@ class MainActivity2 : AppCompatActivity() {
                 binding.tvResChino.text = "Cerdo"}
             else ->{ Toast.makeText(this,"Error al calcular signo zodiacal chino",Toast.LENGTH_SHORT).show() }
         }
-        binding.tvFechaN.text = binding.tvFechaN.text.toString() + (user?.dia.toString() + "/" + user?.mes.toString() + "/" + user?.anio.toString())
-        binding.tvNumCuenta.text = binding.tvNumCuenta.text.toString() + user?.numCuenta.toString()
-        binding.tvCorreo.text = binding.tvCorreo.text.toString() + user?.correo.toString()
+        binding.tvFechaN.text = user?.dia.toString() + "/" + user?.mes.toString() + "/" + user?.anio.toString()
+        binding.tvEdad.text = calculaEdad("${user?.dia}/${user?.mes}/${user?.anio}").toString()
+        binding.tvNumCuenta.text = user?.numCuenta.toString()
+        binding.tvCorreo.text = user?.correo.toString()
+
+    }
+
+    fun click(view: View) {
+        var intent = Intent(this, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(intent)
+
     }
 }

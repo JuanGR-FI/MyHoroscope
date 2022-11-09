@@ -87,20 +87,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity2::class.java)
 
             val usuario = Usuario(nombre,day, month, year,nc.toInt(), correo)
-
             val parametros = Bundle()
-
             parametros.putParcelable("user", usuario)
-
             intent.putExtras(parametros)
 
             startActivity(intent)
         }
-
-
-    }
-
-    fun verificaValores(nombre: String, dia: Int, mes: Int, anio: Int, numCuenta: Int, correo: String){
-
     }
 }
