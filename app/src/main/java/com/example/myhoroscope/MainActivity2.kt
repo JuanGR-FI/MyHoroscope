@@ -41,7 +41,7 @@ class MainActivity2 : AppCompatActivity() {
         val zodiacal = calculaZodiacal(user?.dia,user?.mes)
         val chino = calculaChino(user?.anio)
 
-        entregaResultados(user,chino)
+        entregaResultados(user, chino, zodiacal)
 
     }
 
@@ -131,7 +131,8 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    fun entregaResultados(user: Usuario?, chinoID: Int){
+    fun entregaResultados(user: Usuario?, chinoID: Int, zodiacalID: Int){
+        //Se muestra la imagen y texto correspondiente al calendario chino
         when(chinoID){
             1->{ binding.ivRata.visibility = VISIBLE
                 binding.tvResChino.text = "Rata"}
@@ -159,6 +160,36 @@ class MainActivity2 : AppCompatActivity() {
                 binding.tvResChino.text = "Cerdo"}
             else ->{ Toast.makeText(this,"Error al calcular signo zodiacal chino",Toast.LENGTH_SHORT).show() }
         }
+
+        //Se muestra la imagen y texto correspondiente al calendario chino
+        when(zodiacalID){
+            1->{ binding.ivCapricornio.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Capricornio"}
+            2 ->{ binding.ivAcuario.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Acuario"}
+            3 ->{ binding.ivPiscis.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Piscis"}
+            4 ->{ binding.ivAries.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Aries"}
+            5 ->{ binding.ivTauro.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Tauro"}
+            6 ->{ binding.ivGeminis.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Géminis"}
+            7 ->{ binding.ivCancer.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Cáncer"}
+            8 ->{ binding.ivLeo.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Leo"}
+            9 ->{ binding.ivVirgo.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Virgo"}
+            10 ->{ binding.ivLibra.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Libra"}
+            11 ->{ binding.ivEscorpio.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Escorpio"}
+            12 ->{ binding.ivSagitario.visibility = VISIBLE
+                binding.tvResZodiacal.text = "Sagitario"}
+            else ->{ Toast.makeText(this,"Error al calcular signo zodiacal",Toast.LENGTH_SHORT).show() }
+        }
+
         binding.tvFechaN.text = user?.dia.toString() + "/" + user?.mes.toString() + "/" + user?.anio.toString()
         binding.tvEdad.text = calculaEdad("${user?.dia}/${user?.mes}/${user?.anio}").toString()
         binding.tvNumCuenta.text = user?.numCuenta.toString()
