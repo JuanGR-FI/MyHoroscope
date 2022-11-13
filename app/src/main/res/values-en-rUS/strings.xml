@@ -34,4 +34,16 @@
     <string name="gallo">Rooster</string>
     <string name="perro">Dog</string>
     <string name="cerdo">Pig</string>
+    <string name="ingresanombre">Please enter your name</string>
+    <string name="requierenombre">A name is required</string>
+    <string name="ingresaFecha">Please enter your date of birth</string>
+    <string name="requiereFecha">A date birth is required</string>
+    <string name="ingresanumcuenta">Please enter your student ID</string>
+    <string name="requierenumcuenta">A student ID is required</string>
+    <string name="numcuentaincompleto">Incomplete student ID</string>
+    <string name="numcuentamasdigitos">A 9 digit student ID is required</string>
+    <string name="ingresacorreo">Please enter an e-mail</string>
+    <string name="requierecorreo">An e-mail is required</string>
+    <string name="ingresacorreovalido">Please enter a valid e-mail</string>
+    <string name="requierecorreovalido">A valid e-mail is required</string>
 </resources>

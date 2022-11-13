@@ -46,11 +46,15 @@ class MainActivity : AppCompatActivity() {
         binding.etDatePicker.setOnClickListener {
             val picker = DatePickerDialog(this,datePicker,myCalendar.get(Calendar.YEAR),myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH))
             if(!dateFlag){
-                myCalendar.add(Calendar.YEAR, -2)
+                myCalendar.add(Calendar.YEAR, -86)
+                picker.datePicker.minDate = myCalendar.timeInMillis
+                minDate = picker.datePicker.minDate
+                myCalendar.add(Calendar.YEAR, +83)
                 picker.datePicker.maxDate = myCalendar.timeInMillis
-                minDate = picker.datePicker.maxDate
+                maxDate = picker.datePicker.maxDate
             }
-            picker.datePicker.maxDate = minDate
+            picker.datePicker.maxDate = maxDate
+            picker.datePicker.minDate = minDate
             picker.show()
         }
 
@@ -92,42 +96,42 @@ class MainActivity : AppCompatActivity() {
         if(binding.etNombre.text.isNotEmpty()){
             nombre = binding.etNombre.text.toString()
         }else{
-            Toast.makeText(this@MainActivity,"Por favor ingresa tu nombre",Toast.LENGTH_SHORT).show()
-            binding.etNombre.error = "Se requiere un nombre"
+            Toast.makeText(this@MainActivity,resources.getString(R.string.ingresanombre),Toast.LENGTH_SHORT).show()
+            binding.etNombre.error = resources.getString(R.string.requierenombre)
             flag = false
         }
         if(binding.etDatePicker.text.isEmpty()){
-            Toast.makeText(this@MainActivity,"Por favor ingresa una fecha de nacimiento",Toast.LENGTH_SHORT).show()
-            binding.etDatePicker.error = "Se requiere una fecha de nacimiento"
+            Toast.makeText(this@MainActivity,resources.getString(R.string.ingresaFecha),Toast.LENGTH_SHORT).show()
+            binding.etDatePicker.error = resources.getString(R.string.requiereFecha)
             flag = false
         }
         if(binding.etNumCuenta.text.isNotEmpty()){
             nc = binding.etNumCuenta.text.toString()
             if(nc.length != 9){
-                Toast.makeText(this@MainActivity,"Número de cuenta incompleto",Toast.LENGTH_SHORT).show()
-                binding.etNumCuenta.error = "Se requiere un número de cuenta de 9 dígitos"
+                Toast.makeText(this@MainActivity,resources.getString(R.string.numcuentaincompleto),Toast.LENGTH_SHORT).show()
+                binding.etNumCuenta.error = resources.getString(R.string.numcuentamasdigitos)
                 flag = false
             }
         }else{
-            Toast.makeText(this@MainActivity,"Por favor ingresa tu número de cuenta",Toast.LENGTH_SHORT).show()
-            binding.etNumCuenta.error = "Se requiere un número de cuenta"
+            Toast.makeText(this@MainActivity,resources.getString(R.string.ingresanumcuenta),Toast.LENGTH_SHORT).show()
+            binding.etNumCuenta.error = resources.getString(R.string.requierenumcuenta)
             flag = false
         }
         if(binding.etCorreo.text.isNotEmpty()){
             correo = binding.etCorreo.text.toString()
             if(!PatternsCompat.EMAIL_ADDRESS.matcher(correo).matches()){
-                Toast.makeText(this@MainActivity,"Por favor ingresa un correo electrónico válido",Toast.LENGTH_SHORT).show()
-                binding.etCorreo.error = "Se requiere un correo electrónico válido"
+                Toast.makeText(this@MainActivity,resources.getString(R.string.ingresacorreovalido),Toast.LENGTH_SHORT).show()
+                binding.etCorreo.error = resources.getString(R.string.requierecorreovalido)
                 flag = false
             }
         }else{
-            Toast.makeText(this@MainActivity,"Por favor ingresa un correo electrónico",Toast.LENGTH_SHORT).show()
-            binding.etCorreo.error = "Se requiere un correo electrónico"
+            Toast.makeText(this@MainActivity,resources.getString(R.string.ingresacorreo),Toast.LENGTH_SHORT).show()
+            binding.etCorreo.error = resources.getString(R.string.requierecorreo)
             flag = false
         }
 
         if(flag){
-            Toast.makeText(this@MainActivity,"Todo correcto",Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity,"Todo correcto",Toast.LENGTH_SHORT).show()
             binding.givLoading.visibility = VISIBLE
 
             //startActivity(intent)

@@ -41,5 +41,17 @@
     <string name="perro">Perro</string>
     <string name="cerdo">Cerdo</string>
 
+    <string name="ingresanombre">Por favor ingresa tu nombre</string>
+    <string name="requierenombre">Se requiere un nombre</string>
+    <string name="ingresaFecha">Por favor ingresa una fecha de nacimiento</string>
+    <string name="requiereFecha">Se requiere una fecha de nacimiento</string>
+    <string name="ingresanumcuenta">Por favor ingresa tu número de cuenta</string>
+    <string name="requierenumcuenta">Se requiere un número de cuenta</string>
+    <string name="numcuentaincompleto">Número de cuenta incompleto</string>
+    <string name="numcuentamasdigitos">Se requiere un número de cuenta de 9 dígitos</string>
+    <string name="ingresacorreo">Por favor ingresa un correo electrónico</string>
+    <string name="requierecorreo">Se requiere un correo electrónico</string>
+    <string name="ingresacorreovalido">Por favor ingresa un correo electrónico válido</string>
+    <string name="requierecorreovalido">Se requiere un correo electrónico válido</string>
 
 </resources>
