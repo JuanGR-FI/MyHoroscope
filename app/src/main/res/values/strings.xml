@@ -7,11 +7,39 @@
     <string name="btnIngresar">Ingresar</string>
     <string name="version">Versión 1.0</string>
     <string name="tusresultados">Tus resultados</string>
-    <string name="zodiacal" translatable="false">Zodiacal</string>
+    <string name="zodiacal">Zodiacal</string>
     <string name="chino">Chino</string>
     <string name="numCuenta">Núm. cuenta:</string>
     <string name="correo">Correo:</string>
     <string name="fecha">Fecha de Nac:</string>
     <string name="regresar" >Regresar</string>
     <string name="edad">Edad:</string>
+
+    <string name="capricornio">Capricornio</string>
+    <string name="acuario">Acuario</string>
+    <string name="piscis">Piscis</string>
+    <string name="aries" translatable="false">Aries</string>
+    <string name="tauro">Tauro</string>
+    <string name="geminis">Géminis</string>
+    <string name="cancer">Cáncer</string>
+    <string name="leo" translatable="false">Leo</string>
+    <string name="virgo" translatable="false">Virgo</string>
+    <string name="libra" translatable="false">Libra</string>
+    <string name="escorpio">Escorpio</string>
+    <string name="sagitario">Sagitario</string>
+
+    <string name="rata">Rata</string>
+    <string name="buey">Buey</string>
+    <string name="tigre">Tigre</string>
+    <string name="conejo">Conejo</string>
+    <string name="dragon">Dragón</string>
+    <string name="serpiente">Serpiente</string>
+    <string name="caballo">Caballo</string>
+    <string name="cabra">Cabra</string>
+    <string name="mono">Mono</string>
+    <string name="gallo">Gallo</string>
+    <string name="perro">Perro</string>
+    <string name="cerdo">Cerdo</string>
+
+
 </resources>

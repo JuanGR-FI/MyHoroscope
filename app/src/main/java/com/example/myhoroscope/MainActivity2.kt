@@ -135,58 +135,58 @@ class MainActivity2 : AppCompatActivity() {
         //Se muestra la imagen y texto correspondiente al calendario chino
         when(chinoID){
             1->{ binding.ivRata.visibility = VISIBLE
-                binding.tvResChino.text = "Rata"}
+                binding.tvResChino.text = resources.getString(R.string.rata)}
             2 ->{ binding.ivBuey.visibility = VISIBLE
-                binding.tvResChino.text = "Buey"}
+                binding.tvResChino.text = resources.getString(R.string.buey)}
             3 ->{ binding.ivTigre.visibility = VISIBLE
-                binding.tvResChino.text = "Tigre"}
+                binding.tvResChino.text = resources.getString(R.string.tigre)}
             4 ->{ binding.ivConejo.visibility = VISIBLE
-                binding.tvResChino.text = "Conejo"}
+                binding.tvResChino.text = resources.getString(R.string.conejo)}
             5 ->{ binding.ivDragon.visibility = VISIBLE
-                binding.tvResChino.text = "Dragón"}
+                binding.tvResChino.text = resources.getString(R.string.dragon)}
             6 ->{ binding.ivSerpiente.visibility = VISIBLE
-                binding.tvResChino.text = "Serpiente"}
+                binding.tvResChino.text = resources.getString(R.string.serpiente)}
             7 ->{ binding.ivCaballo.visibility = VISIBLE
-                binding.tvResChino.text = "Caballo"}
+                binding.tvResChino.text = resources.getString(R.string.caballo)}
             8 ->{ binding.ivCabra.visibility = VISIBLE
-                binding.tvResChino.text = "Cabra"}
+                binding.tvResChino.text = resources.getString(R.string.cabra)}
             9 ->{ binding.ivMono.visibility = VISIBLE
-                binding.tvResChino.text = "Mono"}
+                binding.tvResChino.text = resources.getString(R.string.mono)}
             10 ->{ binding.ivGallo.visibility = VISIBLE
-                binding.tvResChino.text = "Gallo"}
+                binding.tvResChino.text = resources.getString(R.string.gallo)}
             11 ->{ binding.ivPerro.visibility = VISIBLE
-                binding.tvResChino.text = "Perro"}
+                binding.tvResChino.text = resources.getString(R.string.perro)}
             12 ->{ binding.ivCerdo.visibility = VISIBLE
-                binding.tvResChino.text = "Cerdo"}
+                binding.tvResChino.text = resources.getString(R.string.cerdo)}
             else ->{ Toast.makeText(this,"Error al calcular signo zodiacal chino",Toast.LENGTH_SHORT).show() }
         }
 
         //Se muestra la imagen y texto correspondiente al calendario chino
         when(zodiacalID){
             1->{ binding.ivCapricornio.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Capricornio"}
+                binding.tvResZodiacal.text = resources.getString(R.string.capricornio)}
             2 ->{ binding.ivAcuario.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Acuario"}
+                binding.tvResZodiacal.text = resources.getString(R.string.acuario)}
             3 ->{ binding.ivPiscis.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Piscis"}
+                binding.tvResZodiacal.text = resources.getString(R.string.piscis)}
             4 ->{ binding.ivAries.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Aries"}
+                binding.tvResZodiacal.text = resources.getString(R.string.aries)}
             5 ->{ binding.ivTauro.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Tauro"}
+                binding.tvResZodiacal.text = resources.getString(R.string.tauro)}
             6 ->{ binding.ivGeminis.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Géminis"}
+                binding.tvResZodiacal.text = resources.getString(R.string.geminis)}
             7 ->{ binding.ivCancer.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Cáncer"}
+                binding.tvResZodiacal.text = resources.getString(R.string.cancer)}
             8 ->{ binding.ivLeo.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Leo"}
+                binding.tvResZodiacal.text = resources.getString(R.string.leo)}
             9 ->{ binding.ivVirgo.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Virgo"}
+                binding.tvResZodiacal.text = resources.getString(R.string.virgo)}
             10 ->{ binding.ivLibra.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Libra"}
+                binding.tvResZodiacal.text = resources.getString(R.string.libra)}
             11 ->{ binding.ivEscorpio.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Escorpio"}
+                binding.tvResZodiacal.text = resources.getString(R.string.escorpio)}
             12 ->{ binding.ivSagitario.visibility = VISIBLE
-                binding.tvResZodiacal.text = "Sagitario"}
+                binding.tvResZodiacal.text = resources.getString(R.string.sagitario)}
             else ->{ Toast.makeText(this,"Error al calcular signo zodiacal",Toast.LENGTH_SHORT).show() }
         }
 

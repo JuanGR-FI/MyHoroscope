@@ -1,30 +1,74 @@
 package com.example.myhoroscope
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.media.MediaCodec
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.View.INVISIBLE
+import android.view.View.VISIBLE
 import android.widget.Toast
 import androidx.core.util.PatternsCompat
 import com.example.myhoroscope.databinding.ActivityMainBinding
 import com.example.myhoroscope.model.Usuario
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var flag = true
+    private var dateFlag = false
     private var day = 0
     private var month = 0
     private var year = 0
+    private var minDate: Long = 0
+    private var maxDate: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.etDatePicker.setOnClickListener{
+        /*binding.etDatePicker.setOnClickListener{
             showDatePickerDialog()
+        }*/
+        val myCalendar = Calendar.getInstance()
+        
+        val datePicker = DatePickerDialog.OnDateSetListener{view,year,month,dayOfMonth ->
+            myCalendar.set(Calendar.YEAR,year)
+            myCalendar.set(Calendar.MONTH,month)
+            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            updateLable(myCalendar)
         }
+
+        binding.etDatePicker.setOnClickListener {
+            val picker = DatePickerDialog(this,datePicker,myCalendar.get(Calendar.YEAR),myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH))
+            if(!dateFlag){
+                myCalendar.add(Calendar.YEAR, -2)
+                picker.datePicker.maxDate = myCalendar.timeInMillis
+                minDate = picker.datePicker.maxDate
+            }
+            picker.datePicker.maxDate = minDate
+            picker.show()
+        }
+
+    }
+
+    private fun updateLable(myCalendar: Calendar) {
+        val myFormat = "dd/MM/yyyy"
+        val sdf = SimpleDateFormat(myFormat, Locale.ROOT)
+        binding.etDatePicker.setText(sdf.format(myCalendar.time))
+
+        this.day = myCalendar.get(Calendar.DAY_OF_MONTH)
+        this.month = myCalendar.get(Calendar.MONTH)
+        this.year = myCalendar.get(Calendar.YEAR)
+
+        myCalendar.set(Calendar.YEAR,this.year)
+        myCalendar.set(Calendar.MONTH,this.month)
+        myCalendar.set(Calendar.DAY_OF_MONTH, this.day)
+        dateFlag = true
     }
 
     private fun showDatePickerDialog() {
@@ -84,14 +128,22 @@ class MainActivity : AppCompatActivity() {
 
         if(flag){
             Toast.makeText(this@MainActivity,"Todo correcto",Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, MainActivity2::class.java)
+            binding.givLoading.visibility = VISIBLE
 
-            val usuario = Usuario(nombre,day, month, year,nc.toInt(), correo)
-            val parametros = Bundle()
-            parametros.putParcelable("user", usuario)
-            intent.putExtras(parametros)
+            //startActivity(intent)
 
-            startActivity(intent)
+            thread{
+                Thread.sleep(500)
+                val intent = Intent(this, MainActivity2::class.java)
+
+                val usuario = Usuario(nombre,day, month+1, year,nc.toInt(), correo)
+                val parametros = Bundle()
+                parametros.putParcelable("user", usuario)
+                intent.putExtras(parametros)
+                startActivity(intent)
+                binding.givLoading.visibility = INVISIBLE
+
+            }
         }
     }
 }
