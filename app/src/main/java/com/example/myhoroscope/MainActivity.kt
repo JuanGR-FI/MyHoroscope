@@ -10,6 +10,7 @@ import android.view.View.INVISIBLE
 import android.view.View.VISIBLE
 import android.widget.Toast
 import androidx.core.util.PatternsCompat
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.example.myhoroscope.databinding.ActivityMainBinding
 import com.example.myhoroscope.model.Usuario
 import java.text.SimpleDateFormat
@@ -52,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                 myCalendar.add(Calendar.YEAR, +83)
                 picker.datePicker.maxDate = myCalendar.timeInMillis
                 maxDate = picker.datePicker.maxDate
+                dateFlag = true
             }
             picker.datePicker.maxDate = maxDate
             picker.datePicker.minDate = minDate
@@ -72,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         myCalendar.set(Calendar.YEAR,this.year)
         myCalendar.set(Calendar.MONTH,this.month)
         myCalendar.set(Calendar.DAY_OF_MONTH, this.day)
-        dateFlag = true
+
     }
 
     private fun showDatePickerDialog() {
@@ -131,10 +133,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         if(flag){
-            //Toast.makeText(this@MainActivity,"Todo correcto",Toast.LENGTH_SHORT).show()
             binding.givLoading.visibility = VISIBLE
-
-            //startActivity(intent)
 
             thread{
                 Thread.sleep(500)
@@ -146,6 +145,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtras(parametros)
                 startActivity(intent)
                 binding.givLoading.visibility = INVISIBLE
+                Animatoo.animateZoom(this)
 
             }
         }

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.View.VISIBLE
 import android.widget.Toast
 import androidx.core.view.isVisible
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.example.myhoroscope.databinding.ActivityMain2Binding
 import com.example.myhoroscope.model.Usuario
 import java.text.SimpleDateFormat
@@ -201,6 +202,12 @@ class MainActivity2 : AppCompatActivity() {
         var intent = Intent(this, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(intent)
+        Animatoo.animateZoom(this)
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        Animatoo.animateZoom(this)
     }
 }
