@@ -53,5 +53,6 @@
     <string name="requierecorreo">Se requiere un correo electrónico</string>
     <string name="ingresacorreovalido">Por favor ingresa un correo electrónico válido</string>
     <string name="requierecorreovalido">Se requiere un correo electrónico válido</string>
+    <string name="desarrollador" translatable="false">© Cervantes Guati Rojo Juan Andrés</string>
 
 </resources>
