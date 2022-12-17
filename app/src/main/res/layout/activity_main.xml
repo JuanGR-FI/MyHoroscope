@@ -108,6 +108,7 @@
         android:hint="@string/nombrehint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:maxLength="12"
         android:textColor="@color/white"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="25sp"
